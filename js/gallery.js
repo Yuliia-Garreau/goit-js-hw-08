@@ -81,7 +81,6 @@ images.forEach((image) => {
   img.src = image.preview;
   img.dataset.source = image.original;
   img.alt = image.description;
-  // img.setAttribute("nosave");
   link.append(img);
 });
 // import * as basicLightbox from "basiclightbox";
@@ -96,18 +95,3 @@ list.addEventListener("click", function handleClick(event) {
   instance.show(origImage);
   console.log(origImage);
 });
-
-// list.addEventListener("click", function handleClick(event) {
-//   const instance = basicLightbox.create(`<img data-source="${event.target.dataset.source}" width="1112" height="640">`);
-
-//   instance.show();
-// });
-
-//
-
-//
-
-// const imageInstance = basicLightbox.create(
-//   document.querySelector(".gallery-link")
-// );
-// document.querySelector("img[data-source]").onclick = imageInstance.show;
